@@ -11,7 +11,7 @@
 // OS設定を日本語キーボードのまま使用するための変換定義
 #define JP_DQT          AT                // "
 #define JP_AMPS         CARET             // &
-#define JP_SQT          AMPERSAND         // '
+#define JP_SQT          AMPS              // '
 #define JP_EQUAL        UNDER             // =
 #define JP_CARET        EQUAL             // ^
 #define JP_YEN          0x89              // ¥
@@ -20,7 +20,7 @@
 #define JP_PIPE         LS(0x89)          // |
 #define JP_AT           LEFT_BRACKET      // @
 #define JP_COLON        SINGLE_QUOTE      // :
-#define JP_ATRK         DOUBLE_QUOTES     // *
+#define JP_ATRK         DQT               // *
 #define JP_BQT          LEFT_BRACE        // `
 #define JP_UNDR         LS(0x87)          // _
 #define JP_LBKT         RIGHT_BRACKET     // [
@@ -51,7 +51,7 @@
                 &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp JP_COLON
                 &kp LALT  &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                              &kp LSHFT &mo 1 &kp SPACE   &kp RET &mo 2 &kp JP_KANA
+                            &kp LSHFT &mo SYM &kp SPACE   &kp RET &mo NUM &kp JP_KANA
             >;
         };
 
@@ -61,17 +61,17 @@
                 &kp TAB   &kp EXCL       &kp JP_AT &kp UP   &kp DLLR  &kp PRCNT    &kp JP_CARET &kp JP_ATRK  &kp JP_LPAR &kp JP_RPAR &kp JP_AMPS &kp HASH
                 &kp LCTRL &kp JP_SQT     &kp LEFT  &kp DOWN &kp RIGHT &kp JP_DQT   &kp JP_PLUS  &kp FSLH     &kp JP_LBKT &kp JP_RBKT &kp JP_UNDR &kp JP_TILDE
                 &kp LALT  &studio_unlock &kp LSHFT &trans   &trans    &kp JP_BQT   &kp MINUS    &kp JP_EQUAL &kp JP_LBRC &kp JP_RBRC &kp JP_PIPE &kp JP_YEN
-                                                   &kp LGUI &trans    &kp SPAC     &kp RET      &trans       &kp JP_EISU
+                                                   &kp LGUI &trans    &kp SPACE    &kp RET      &trans       &kp JP_EISU
             >;
         };
 
         num {
             display-name = "NUM";
             bindings = <
-                &kp TAB   &kp F1   &kp F2   &kp F3      &kp F4    &kp F5         &kp F6  &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
-                &kp LCTLR &kp N1   &kp N2   &kp N3      &kp N4    &kp N5         &kp N6  &kp N7 &kp N8 &kp N9 &kp N0  &kp F12
-                &kp LALT  &JP_ATRK &kp FSLH &kp JP_PLUS &kp MINUS &kp JP_EQUAL   &trans  &trans &trans &trans &trans  &kp RALT
-                                                     &kp LSHFT &trans &kp SPACE   &kp RET &trans &JP_HANZEN
+                &kp TAB   &kp F1      &kp F2   &kp F3      &kp F4    &kp F5         &kp F6  &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+                &kp LCTRL &kp N1      &kp N2   &kp N3      &kp N4    &kp N5         &kp N6  &kp N7 &kp N8 &kp N9 &kp N0  &kp F12
+                &kp LALT  &kp JP_ATRK &kp FSLH &kp JP_PLUS &kp MINUS &kp JP_EQUAL   &trans  &trans &trans &trans &trans  &kp RALT
+                                                       &kp LSHFT &trans &kp SPACE   &kp RET &trans &kp JP_HANZEN
             >;
         };
 
