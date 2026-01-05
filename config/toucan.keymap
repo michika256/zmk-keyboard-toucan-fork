@@ -48,9 +48,9 @@
         base {
             display-name = "BASE";
             bindings = <
-                &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-                &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp JP_COLON
-                &kp LALT  &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+                &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp JP_COLON
+                &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RALT
                             &kp LSHFT &mo SYM &kp SPACE   &kp RET &mo NUM &kp JP_KANA
             >;
         };
@@ -58,9 +58,9 @@
         sym {
             display-name = "SYM";
             bindings = <
-                &kp TAB   &kp EXCL       &kp JP_AT &kp UP   &kp DLLR  &kp PRCNT    &kp JP_CARET &kp JP_ATRK  &kp JP_LPAR &kp JP_RPAR &kp JP_AMPS &kp HASH
-                &kp LCTRL &kp JP_SQT     &kp LEFT  &kp DOWN &kp RIGHT &kp JP_DQT   &kp JP_PLUS  &kp FSLH     &kp JP_LBKT &kp JP_RBKT &kp JP_UNDR &kp JP_TILDE
-                &kp LALT  &studio_unlock &kp LSHFT &trans   &trans    &kp JP_BQT   &kp MINUS    &kp JP_EQUAL &kp JP_LBRC &kp JP_RBRC &kp JP_PIPE &kp JP_YEN
+                &kp JP_YEN &kp EXCL       &kp JP_AT &kp UP   &kp DLLR  &kp PRCNT    &kp JP_CARET &kp JP_ATRK  &kp JP_LPAR &kp JP_RPAR &kp JP_AMPS &kp HASH
+                &kp TAB    &kp JP_SQT     &kp LEFT  &kp DOWN &kp RIGHT &kp JP_DQT   &kp JP_PLUS  &kp FSLH     &kp JP_LBKT &kp JP_RBKT &kp JP_UNDR &kp JP_TILDE
+                &kp LCTRL  &studio_unlock &kp LSHFT &trans   &trans    &kp JP_BQT   &kp MINUS    &kp JP_EQUAL &kp JP_LBRC &kp JP_RBRC &kp JP_PIPE &kp RALT
                                                    &kp LGUI &trans    &kp SPACE    &kp RET      &trans       &kp JP_EISU
             >;
         };
@@ -68,9 +68,9 @@
         num {
             display-name = "NUM";
             bindings = <
-                &kp TAB   &kp F1      &kp F2   &kp F3      &kp F4    &kp F5         &kp F6  &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
-                &kp LCTRL &kp N1      &kp N2   &kp N3      &kp N4    &kp N5         &kp N6  &kp N7 &kp N8 &kp N9 &kp N0  &kp F12
-                &kp LALT  &kp JP_ATRK &kp FSLH &kp JP_PLUS &kp MINUS &kp JP_EQUAL   &trans  &trans &trans &trans &trans  &kp RALT
+                &kp ESC   &kp F1      &kp F2   &kp F3      &kp F4    &kp F5         &kp F6  &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+                &kp TAB   &kp N1      &kp N2   &kp N3      &kp N4    &kp N5         &kp N6  &kp N7 &kp N8 &kp N9 &kp N0  &kp F12
+                &kp LCTRL &kp JP_ATRK &kp FSLH &kp JP_PLUS &kp MINUS &kp JP_EQUAL   &trans  &trans &trans &trans &trans  &kp RALT
                                                        &kp LSHFT &trans &kp SPACE   &kp RET &trans &kp JP_HANZEN
             >;
         };
@@ -78,9 +78,9 @@
         utl {
             display-name = "UTL";
             bindings = <
-                &kp TAB   &trans       &trans       &trans       &trans       &trans         &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP &trans &trans &kp DEL
-                &kp LCTRL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans       &trans      &trans       &trans &trans &kp INS
-                &kp LALT  &trans       &kp F1       &kp F2       &kp F3       &kp F10        &trans       &trans      &trans       &trans &trans &kp CAPS
+                &kp ESC   &trans       &trans       &trans       &trans       &trans         &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP &trans &trans &kp DEL
+                &kp TAB   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans       &trans      &trans       &trans &trans &kp INS
+                &kp LCTRL &trans       &kp F1       &kp F2       &kp F3       &kp F10        &trans       &trans      &trans       &trans &trans &kp CAPS
                                                                &kp LSHFT &trans &kp SPACE    &kp RET &trans &trans
             >;
         };
