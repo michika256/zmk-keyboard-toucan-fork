@@ -89,9 +89,9 @@
         aml {
             display-name = "AML";
             bindings = <
-                &mo ESC   &trans &trans &trans &trans &trans    &mkp LCLK &mkp RCLK &trans &trans &trans &kp BSPC
+                &kp ESC   &trans &trans &trans &trans &trans    &mkp LCLK &mkp RCLK &trans &trans &trans &kp BSPC
                 &kp TAB   &trans &trans &trans &trans &trans    &trans    &trans    &trans &trans &trans &trans
-                &bt LCTRL &trans &trans &trans &trans &trans    &trans    &trans    &trans &trans &trans &kp RALT
+                &kp LCTRL &trans &trans &trans &trans &trans    &trans    &trans    &trans &trans &trans &kp RALT
                                    &kp LSHFT &trans &kp SPACE   &kp RET &trans &trans
             >;
         };
