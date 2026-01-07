@@ -92,6 +92,15 @@
     };
 };
 
+&zip_temp_layer {
+    excluded-positions = <
+        6  // Y
+        7  // U
+        24 // Ctrl
+    >;
+    require-prior-idle-ms = <200>;
+};
+
 / {
     split_inputs {
         #address-cells = <1>;
@@ -107,7 +116,10 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&glidepoint_split>;
-        input-processors = <&zip_xy_scaler 250 100>;
+        input-processors = <
+            &zip_xy_scaler 250 100
+            &zip_temp_layer 4 5000
+        >;
         scroller {
             layers = <1 2>;
             input-processors = <
